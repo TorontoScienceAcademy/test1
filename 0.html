@@ -1,0 +1,309 @@
+<html>
+    <head>
+    <title>TSA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="icon" href="https://scontent-sin6-1.xx.fbcdn.net/v/t1.0-9/15672482_1770529326606638_7412312881050321152_n.png?oh=2f51d1d309d64b294fdda3ceb206a53b&oe=58F322E8" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+.columns {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+}
+
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+}
+
+.price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+.price .grey {
+    background-color: #eee;
+    font-size: 20px;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+    .columns {
+        width: 100%;
+    }
+}
+div.scrollmenu {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 24px;
+    text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+    background-color: #777;
+}
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    color: ffffff;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+    </head>
+    <body bgcolor="202020">
+    <div class="scrollmenu">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="#support">Support</a>
+  <a href="#blog">Blog</a>
+  <a href="#tools">Tools</a>  
+  <a href="#base">Base</a>
+  <a href="#custom">Custom</a>
+  <a href="#more">More</a>
+  <a href="#logo">Logo</a>
+  <a href="#friends">Friends</a>
+  <a href="#partners">Partners</a>
+  <a href="#people">People</a>
+  <a href="#work">Work</a>
+</div>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "202020";
+}
+</script>
+    <table border="0" width="80%" align="center" >
+    <tr bgcolor="131212">
+        <td align="center"><img src="https://scontent-sin6-1.xx.fbcdn.net/v/t31.0-8/15625830_1787745188143814_2086105879343445318_o.jpg?oh=a772f5f221c2993c920e6b2074d6b454&oe=58F942D6"
+        width="100%" height="20%"></td>
+    </tr>
+    <tr bgcolor="232222">
+    <td align="center">
+    <section>
+  <img class="mySlides" src="https://scontent-sin6-1.xx.fbcdn.net/v/t31.0-8/15626562_1787921284792871_3831619184781217266_o.jpg?oh=3c4a16d61dbd32eda8402fcc42cfc678&oe=58E2F28B"
+  style="width:840">
+  <img class="mySlides" src="https://scontent-sin6-1.xx.fbcdn.net/v/t31.0-8/15731757_1787914688126864_7251421110228541242_o.jpg?oh=a2ebebe03b12574f67fa8bea21ec1f5e&oe=58E96C0B"
+  style="width:840">
+  <img class="mySlides" src="https://scontent-sin6-1.xx.fbcdn.net/v/t31.0-8/15724557_1787914701460196_3424025125469252181_o.jpg?oh=4520fd54f547d31afbab25c255f34755&oe=58EAA320"
+  style="width:840">
+  <img class="mySlides" src="https://scontent-sin6-1.xx.fbcdn.net/v/t31.0-8/15676124_1787921271459539_5293273115511704642_o.jpg?oh=e4f4a5c558b836bcf6c841c7d82d00b8&oe=58E1C874"
+  style="width:840">
+  <img class="mySlides" src="https://scontent-sin6-1.xx.fbcdn.net/v/t1.0-0/p235x350/15665940_1787914691460197_3879050442939057945_n.jpg?oh=d3637c15f374ae6384d89e1dd5ac78f4&oe=58EBB8BB"
+  style="width:840">
+</section>
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+}
+</script>
+    </td>
+    </tr>
+    <tr bgcolor="333232">
+        <td align="center">
+            <iframe width="840" height="473" src="https://www.youtube.com/embed/UeBD-FPT8Bc" frameborder="2" allowfullscreen></iframe>
+        </td>
+    </tr>
+    <tr bgcolor="ffffff">
+        <td align="center">
+            <h2 style="text-align:center">Responsive Course Table</h2>
+<p style="text-align:center">Table announced facts will be applicable till February, 2017.</p>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">Physics</li>
+    <li class="grey">BDT 1000 / month</li>
+    <li>Equation Strength</li>
+    <li>10 Mock Test</li>
+    <li>10 MCQ Test</li>
+    <li>Final Mock</li>
+    <li class="grey"><a href="#" class="button">Sign Up</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:#4CAF50">ICT</li>
+    <li class="grey">BDT 1000 / month</li>
+    <li>Equation Strength</li>
+    <li>12 Mock Test</li>
+    <li>15 MCQ Test</li>
+    <li>Final Mock</li>
+    <li class="grey"><a href="#" class="button">Sign Up</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">Chemistry</li>
+    <li class="grey">BDT 1000 / month</li>
+    <li>Coding Strength</li>
+    <li>10 Mock Test</li>
+    <li>10 MCQ Test</li>
+    <li>Final Mock</li>
+    <li class="grey"><a href="#" class="button">Sign Up</a></li>
+  </ul>
+</div>
+        </td>
+    </tr>
+    <tr bgcolor="434242">
+        <td align="center">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.115979728739!2d90.41283741498054!3d23.7075519846105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x73244a0d73ae4557!2sTSA+-+Toronto+Science+Academy+%5BLuxmibazar%5D!5e0!3m2!1sen!2s!4v1482658088931" width="840" height="450" frameborder="2" style="border:1" allowfullscreen></iframe>
+        </td>
+    </tr>
+    <tr bgcolor="000000">
+    <td>
+    <section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide"><font color="ffffff">TSA - Toronto Science Academy</h2>
+  <p class="w3-opacity"><i>walk towards excellence</i></p>
+  <p class="w3-justify">TSA , is an institution of higher learning that promotes and inculcates ethical standards, values and norms. The Central mission of TSA is to provide students with opportunities, resources and expertise to achieve academic, personal and career goals within a stimulating and supportive environment. In addition to creation and dissemination of knowledge, its mission includes promotion of humanism and peace through higher education . TSA provides an inspiring environment for students seeking a rich learning environment that goes beyond the ordinary school curriculum. Sensitive to the needs of its students and staff, TSA is committed to providing a humane, responsive and invigorating atmosphere for productive learning and innovative thinking.</p>
+</section>
+<!-- Band Members -->
+<section class="w3-row-padding w3-center w3-light-grey">
+  <article class="w3-third">
+    <p>Boshishtho</p>
+    <img src="https://scontent-sin6-1.xx.fbcdn.net/v/t1.0-9/15726879_1787918318126501_3000230287323380123_n.jpg?oh=2c94c65bfe165d8dc1c52c1f390a86fe&oe=58EE0C42" alt="Random Name" style="width:100%">
+    <p>Boshishtho is the most Serious.</p>
+  </article>
+  <article class="w3-third">
+    <p>Nafis</p>
+    <img src="https://scontent-sin6-1.xx.fbcdn.net/v/t1.0-9/15672769_1787918321459834_3249143771469895684_n.jpg?oh=bf4a6fe6887b08960078e59f262cb912&oe=58E5FA3D" alt="Random Name" style="width:100%">
+    <p>Nafis is the coolest.</p>
+  </article>
+  <article class="w3-third">
+    <p>Shinly</p>
+    <img src="https://scontent-sin6-1.xx.fbcdn.net/v/t1.0-9/15741124_1787918324793167_5417259132190386463_n.jpg?oh=c72d18e91861a0526a87be16c75c0cf6&oe=58FB15CD" alt="Random Name" style="width:100%">
+    <p>Shinly is the fastest.</p>
+  </article>
+</section>
+</td>
+</tr>
+</table>
+
+    <!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="https://www.facebook.com/TSA.ew"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="https://twitter.com/TSA_ew"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <p class="w3-medium">
+  Copyright 2016 &copy; <a href="http://www.facebook.com/TSA.ew" target="_blank">TSA</a>
+  </p>
+</footer>
+    </body>
+    </div>
+</html>
